@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Find Your Blood | Welcome</title>
+  <link rel="icon" href="./img/icon.jpg" type="image/png" >
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/myjspusingJquery.js"></script>
+  <script>
+      
+      function preventBack()
+      {
+          window.history.forward();
+      }
+      setTimeout("preventBack()",0);
+      window.onload=function(){
+          null
+      };
+  </script>
+</head>
+<body id="home">
+    
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container">
+      <a href="index.html" class="navbar-brand" style="font-size:30px;">Find Your <span style="color:#e8491d">Blood</span></a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item pr-1">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item pr-1">
+            <a href="#explore-head-section" class="nav-link">Explore&nbsp;&nbsp;</a>
+          </li>
+          <li class="nav-item mt-1 ">
+			<button class="btn btn-outline-info" data-toggle="modal" data-target="#logInModal">Log In</button>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <header id="home-section">
+    <div class="dark-overlay">
+      <div class="home-inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 d-none d-lg-block">
+              <h1 class="display-4">"A single pint can save three lives, a single gesture can create a million smiles"</h1>
+                <div class="d-flex flex-row">
+                    <div class="p-4 align-self-start">
+                        <i class="fa fa-check"></i>
+                    </div>
+                    <div class="p-4 align-self-end">
+                        To serve our community by meeting the needs of patients, hospitals, and members for safe, high quality blood products and related services.
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row">
+                    <div class="p-4 align-self-start">
+                        <i class="fa fa-check"></i>
+                    </div>
+                    <div class="p-4 align-self-end">
+					To connect various non-profit blood bank organization with our centralized database. 
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row">
+                    <div class="p-4 align-self-start">
+                        <i class="fa fa-check"></i>
+                    </div>
+                    <div class="p-4 align-self-end">
+					To bring all the blood donors to a single platform and contact them in need of emergency.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 py-5">
+              <div class="card bg-dark text-center card-form">
+                <div class="card-body">
+                  <h3>Search Your Blood Matches!</h3>
+                  <p>Please fill out this form to search for Blood Bank</p>
+                  <form action="FindBloodBankServlet" method="post">
+                    <div class="form-group">
+                       <input type="hidden" name="country" id="countryId" value="IN"/>
+                        <select name="state" class="states order-alpha form-control form-control-lg " id="stateId">
+                            <option value="">Select State</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select name="city" class="cities order-alpha form-control form-control-lg" id="cityId">
+                            <option value="">Select City</option>
+                        </select>
+
+                    </div>
+                    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+                    <script src="//geodata.solutions/includes/statecity.js"></script> 
+                   
+                    <input type="submit" class="btn btn-outline-secondary btn-block">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- EXPLORE HEAD -->
+  <section id="explore-head-section">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <div class="py-5">
+            <h1 class="display-4">Explore</h1>
+            <p class="lead">Each year, thousands of people rely on receiving donated blood and blood products to stay alive.</p>
+            <a href="exploreMe.html" class="btn btn-outline-secondary" >Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPLORE SECTION -->
+  <section id="explore-section" class="bg-light text-muted py-5">
+    <div class="container">
+	<h3 class="display-4" style="text-align:center"><b>An Inspiration</b></h3>
+	<br>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="img/james_harrison.jpg" alt="" class="img-fluid mb-3 rounded-circle">
+        </div>
+		<div class="col-md-1">
+		
+		</div>
+        <div class="col-md-5">
+          <h3>A Man with Golden Arm</h3>
+          <p class="lead text-justify"><b>James Christopher Harrison </b>(born 27 December 1936), OAM, also known as the Man with the golden arm, 
+		  is a blood plasma donor from Australia whose unusual plasma composition has been used to make a treatment for Rhesus disease. 
+		  He has made over <i>1000 donations throughout his lifetime</i>, 
+		  and these donations are estimated to have saved over two million unborn babies from the condition.</p>
+			<p><i>Commenting on his record, he said:</i></p>
+			<p><i><strong>"I could say it's the only record that I hope is broken, because if they do, they have donated a thousand donations."</strong></i></p>
+				
+          <div class="d-flex flex-row">
+            <div class="p-4 align-self-start">
+              <i class="fa fa-check"></i>
+            </div>
+            <div class="p-4 align-self-end">
+					 Nominated for Australian of the Year
+            </div>
+          </div>
+
+          <div class="d-flex flex-row">
+            <div class="p-4 align-self-start">
+              <i class="fa fa-check"></i>
+            </div>
+            <div class="p-4 align-self-end">
+              Medal of the Order of Australia (OAM) on 7 June 1999.
+            </div>
+          </div>
+		  
+		   <div class="d-flex flex-row">
+            <div class="p-4 align-self-start">
+              <i class="fa fa-check"></i>
+            </div>
+            <div class="p-4 align-self-end">
+					  Nominated in the New South Wales Local Hero division of the Australian of the Year awards.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- MAIN FOOTER -->
+  <footer id="main-footer" class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <div class="py-4">
+            <h1 class="h3">Find Your Blood</h1>
+            <p>Minor Project &copy; 2017-18</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LogIn MODAL -->
+  <div class="modal fade text-dark" id="logInModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="logInModalTitle">LogIn</h5>
+          <button class="close" data-dismiss="modal"><span>&times;</span></button>
+        </div>
+        <div class="modal-body">
+            <form action="LogInController" method="post" onclick="return(validate())">
+            <div class="form-group">
+              <label for="name">EmailId</label>
+              <input type="email" class="form-control" id="emailId" name="emailId">
+              <span id="sp1"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Password</label>
+              <input type="password" class="form-control" id="password" name="password">
+              <span id="sp2"></span>
+            </div>
+            
+          
+        
+        <div class="modal-footer">
+          <input type="submit" value="Submit" class="btn btn-primary">
+        </div>
+           </form>
+            </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<%-- 
+    Document   : showerror
+    Created on : 26 Dec, 2017, 11:28:33 AM
+    Author     : Pkc Prashant
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Find Your Blood | Welcome</title>
+
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/myjspusingJquery.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#myModal").modal('show');
+    });
+</script>
+</head>
+<body>
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        
+            <div class="alert alert-warning alert-dismissible">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">No Donor Found</h4>
+            </div>
+            
+        
+    </div>
+</div>
+</body>
+</html>
